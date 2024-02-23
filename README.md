@@ -7,23 +7,18 @@ Easiest way to create your own is to use the [Overleaf template](https://www.ove
 ## Availability
 
 1. Direct download.
-2. 2. [**Overleaf**.com template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf)
+2. [**Overleaf**.com template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf)
 
 ## Previews
 
 ![alt tag]([https://github.com/sansquoi/PlushCV/blob/main/previews/plushcv-merriweather-sample.png](https://github.com/sansquoi/AustereCV/blob/main/AustereCV.png))
 
 ## Changelog
-
 ### v1.0
 
 
 ## TODO
-
 1. Add more font options.
-
-## Known Issues:
-
 
 ## License
 
