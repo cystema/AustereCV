@@ -2,12 +2,12 @@
 
 A **one-page** stripped down ATS-friendly resume template.
 
-Easiest way to create your own is to use the [Overleaf template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf) to edit and compile. 
+Easiest way to create your own is to use the Overleaf template (pending review from Overleaf) to edit and compile. 
 
 ## Availability
 
 1. Direct download.
-2. [**Overleaf**.com template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf)
+2. Overleaf template (pending review from Overleaf).
 
 ## Previews
 
