@@ -11,7 +11,7 @@ Easiest way to create your own is to use the [Overleaf template](https://www.ove
 
 ## Previews
 
-![alt tag]([https://github.com/sansquoi/PlushCV/blob/main/previews/plushcv-merriweather-sample.png](https://github.com/sansquoi/AustereCV/blob/main/AustereCV.png))
+![alt tag](https://github.com/sansquoi/AustereCV/blob/main/AustereCV.png)
 
 ## Changelog
 ### v1.0
