@@ -1,0 +1,320 @@
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+% Resume in Latex
+% Author : Shubham Mazumder
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{soul}
+\input{glyphtounicode}
+\usepackage[margin=0.5in]{geometry}
+
+%----------FONT OPTIONS----------
+% Sans-serif Fonts
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault,light]{inter}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage{roboto}
+% \usepackage[sfdefault,medium]{InriaSans}
+\usepackage[default]{sourcesanspro}
+
+% Serif Fonts
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% -------------------------------------
+%----------PAGE SETUP------------------
+% -------------------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{0.5pt}
+% \addtolength{\evensidemargin}{0.5pt}
+% \addtolength{\textwidth}{0.9in}
+% \addtolength{\topmargin}{-0.6in}
+% \addtolength{\textheight}{1.6in}
+
+% \addtolength{\oddsidemargin}{-.875in}
+% \addtolength{\evensidemargin}{-.875in}
+% \addtolength{\textwidth}{1.75in}
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
+
+% URL style
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% ----------- Definitions -----------------------
+\def\spaceforrole{ }
+\definecolor{lightyellow}{cmyk}{0.00, 0.05, 0.20, 0.00} % Highlights
+\sethlcolor{lightyellow} % Highlights
+
+%--------------- Custom commands -----------------------
+
+\newcommand{\sectionspace}{
+\vspace{-20pt}
+}
+
+\newcommand{\subheadingtitlevspace}{
+\vspace{-3pt}
+}
+
+
+% Resume Item
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+% Titles
+\newcommand{\titleItem}[1]{
+  % \textsl{\textbf{#1}}
+  \textbf{#1}
+}
+
+
+% Highlighting
+\newcommand{\highlight}[1]{
+  \textsl{\textbf{#1}}
+  % \hl{\textsl{\textbf{#1}}}
+  % \textbf{#1}
+  % \textsl{\hl{#1}}
+}
+
+% Resume Subheading
+\newcommand{\resumeSubheading}[4]{
+  \item
+     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
+      {#1} & \titleItem{#3} | {#2} & \textit{#4}\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{#3} & \textit{#4} \\
+%     \end{tabular*}\vspace{-8pt}
+% }
+
+
+
+% Resume Sub-sub heading
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+% Resume Project Heading
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{ #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+%Resume Subheading List
+\newcommand{\resumeSubHeadingListStart}{\subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%Resume Item List
+\newcommand{\resumeItemListStart}{
+% \vspace{-1pt}
+\begin{itemize}}
+\newcommand{\resumeItemListEnd}{
+% \vspace{-6pt}
+\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------
+
+\begin{document}
+
+% -------------------------------------
+%----------HEADING---------------------
+% -------------------------------------
+
+\begin{flushleft}
+    \textbf{\large John Smith} \\    
+    \textit{Salt Lake City, Utah} $|$ 
+    \textit{111-111-1111} $|$  
+    \href{https://website}{{\textit{@website}}} $|$
+    \href{mailto:email@email.com}{{\textit{@mail}}} $|$ 
+    \href{https://linkedin.com/in/username}{{\textit{@linkedin}}} $|$
+    \href{https://github.com/sansquoi}{{\textit{@github}}}
+    \vspace{-8pt}
+\end{flushleft}
+
+% -------------------------------------
+%---------- PROFESSIONAL SUMMARY ------
+% -------------------------------------
+
+\section{Professional Summary}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     {Versatile developer with a Master's in Computer Science, distinguished for collaborative skills and a track record of independently delivering impactful results. Ample experience in full-stack development, delivering well-documented, tested, and operable code. Efficient in collaborating and communicating new ideas and opinions.} \\      
+    }}
+ \end{itemize}
+ \sectionspace
+
+
+% -------------------------------------
+%----------HEADING---------------------
+% -------------------------------------
+
+\section{Awards and Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\titleItem{Star Award} \emph{ $|$ Company 1}}{September 2018}
+      \resumeProjectHeading
+          {\titleItem{Kudos Award} \emph{ $|$ Company 2}}{May 2017}
+      \resumeProjectHeading
+          {\titleItem{IBM Full Stack Software Developer} \emph{$|$ IBM}}{November 2023}
+          \resumeProjectHeading
+          {\titleItem{CompTia Sec+} \emph{$|$ CompTia}}{December 2023}
+    \resumeSubHeadingListEnd
+% -------------------------------------
+%----------TECHNICAL SKILLS------------
+% -------------------------------------
+
+\section{Technical Skills}
+\subheadingtitlevspace
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \titleItem{Languages}{: C\#, Python, C/C++, SQL (Postgres, MS-SQL, MySQL), JavaScript, TypeScript, HTML, XML, JSON, CSS, Sass} \\
+     \titleItem{Frameworks}{: ASP.NET (.NET Core, MVC, VB.NET), jQuery, React Native, Blazor, Node.js, Flask, Django, ExpressJS, Bootstrap} \\
+     \titleItem{DevOps and API Tools}{: IIS, Git, Docker, OpenShift, Kubernetes, Azure DevOps, TFS, Octopus Deploy, Swagger, Postman} \\
+     \titleItem{Cloud and Security Tools}{: IBM Cloud, AWS, Azure Cloud, SQL Server, SSIS, SSRS, Linux (Configuring and Managing)} \\
+     \titleItem{Others}{: Data Modeling, Agile (Scrum/Kanban), SOLID, Design Patterns,  Debugging, Root Cause Analysis}
+    }}
+ \end{itemize}
+\sectionspace
+
+
+
+    
+% -------------------------------------
+%----------EXPERIENCE------------------
+% -------------------------------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+           {\titleItem{{Software Developer 3}} $|$ \emph{Company 3}}{August 2021 --Present}
+      \resumeItemListStart
+        \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+        \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.}
+        \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+      \resumeItemListEnd
+
+
+    \resumeProjectHeading
+           {\titleItem{{Software Developer 2}} $|$ \emph{Company 2}}{July 2016 -- March 2020}
+      \resumeItemListStart
+        \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+        \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. }
+        \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+        \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium. }
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+           {\titleItem{{Software Developer}} $|$ \emph{Company 1}}{July 2016 -- March 2020}
+      \resumeItemListStart    
+    \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, generating\highlight{$>$\$100,000k in cost savings.}}
+        \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, to save up to\highlight{\$30,000 in development hours.}} 
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -------------------------------------
+%----------EDUCATION-------------------
+% -------------------------------------
+
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {University of Utah}{Salt Lake City, UT}
+%       {MS in Computer Science | GPA: 3.86}{January 2021 -- December 2023} 
+%     \resumeSubheading
+%       {SRM University}{Chennai, TN, India}
+%       {Bachelor of Technology in Computer Science and Engineering | GPA: 3.4}{August 2012 -- May 2016}
+%   \resumeSubHeadingListEnd
+% \vspace{-12pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Utah}{GPA : 3.86}
+      {MS in Computer Science}{January 2021 -- December 2023} 
+    \resumeSubheading
+      {University of Utah}{GPA : 3.75}
+      {BS in Computer Science and Engineering}{August 2012 -- May 2016}
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+% -------------------------------------
+%----------PROJECTS--------------------
+% -------------------------------------
+
+ \section{Projects}    
+     \resumeSubHeadingListStart
+        \resumeProjectHeading
+           {\titleItem{Project 1} $|$ \emph{Django, IBM Cloud, SQLite, Function-as-a-Service, Kubernetes, OpenShift}}{Nov 2023}
+            \resumeItemListStart
+            \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. }
+            \resumeItem{Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.}
+           \resumeItemListEnd
+       \resumeProjectHeading
+           {\titleItem{Project 2} $|$ \emph{Python, numpy. D3.js}}{Spring 2022}
+            \resumeItemListStart
+            \resumeItem{Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.} 
+            \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. }
+           \resumeItemListEnd
+       \resumeProjectHeading
+           {\titleItem{Project 3} $|$ \emph{\LaTeX}}{November 2021}
+            \resumeItemListStart
+            \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. }
+           \resumeItemListEnd
+     \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
