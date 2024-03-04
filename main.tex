@@ -29,8 +29,11 @@
 %----------FONT OPTIONS----------
 % Sans-serif Fonts
 % \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault,light]{inter}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage{roboto}
 % \usepackage[sfdefault,medium]{InriaSans}
- \usepackage[default]{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 
 % Serif Fonts
 % \usepackage{CormorantGaramond}
@@ -51,7 +54,7 @@
 % Adjust margins
 % \addtolength{\oddsidemargin}{0.5pt}
 % \addtolength{\evensidemargin}{0.5pt}
-% \addtolength{\textwidth}{0.8in}
+% \addtolength{\textwidth}{0.9in}
 % \addtolength{\topmargin}{-0.6in}
 % \addtolength{\textheight}{1.6in}
 
@@ -70,8 +73,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large\color{Sepia}
-}{}{0em}{}[\titlerule \vspace{-4pt}]
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -102,7 +105,7 @@
 % Titles
 \newcommand{\titleItem}[1]{
   % \textsl{\textbf{#1}}
-  \textbf{\color{black}#1}
+  \textbf{#1}
 }
 
 
@@ -171,7 +174,7 @@
 % -------------------------------------
 
 \begin{flushleft}
-    \textbf{\Large John Smith} \\    
+    \textbf{\large John Smith} \\    
     \textit{Salt Lake City, Utah} $|$ 
     \textit{111-111-1111} $|$  
     \href{https://website}{{\textit{@website}}} $|$
@@ -315,3 +318,13 @@
 
 %-------------------------------------------
 \end{document}
+
+About
+
+    About us
+    Our values
+    Careers
+    Press & awards
+    Blog
+
+Learn
