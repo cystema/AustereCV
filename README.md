@@ -7,7 +7,7 @@ Easiest way to create your own is to use the [**Overleaf template**](https://www
 ## Availability
 
 1. Direct download.
-2. Overleaf template (pending review from Overleaf).
+2. [Overleaf template](https://www.overleaf.com/latex/templates/austerecv/kjcpjsmjbzmy).
 
 ## Previews
 
